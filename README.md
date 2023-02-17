@@ -66,5 +66,5 @@ This also includes comments at the bottom of the page, and if you are logged in 
 
 
 ## Credits
-Murray Bosworth
-https://www.hyperiondev.com/ for their course resources
+- Murray Bosworth
+- https://www.hyperiondev.com/ for their course resources
