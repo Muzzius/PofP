@@ -24,6 +24,47 @@ Their is user account registration and login supported by Django included, neces
    2. Run the following commands:
       1. python manage.py migrate
       2. python manage.py makemigrations blog
-      3. 
-      
-### WIP
+      3. python manage.py sqlmigrate blog 0001
+      4. python manage.py migrate
+4. You should make yourself a superuser account so you can enter the admin page, to do this in command prompt enter:
+   "python manage.py createsuperuser" and follow the steps to create your account
+
+## Usage
+To run the site open command prompt and make sure the base directory you saved the files in is selected (this should be the directory containing manage.py).
+You can now activate you virtual environment and enter the command "python manage.py runserver" to run the site. It should look like this:
+
+![RunServer](https://user-images.githubusercontent.com/15369629/219766991-2a961fbf-a877-4b12-845e-bf5931999251.PNG)
+
+The site should now be displayed if you navigate to http://127.0.0.1:8000/ in your browser of choice. 8000 is the default port, you can change this by
+adding the port number you want to use to the end of the runserver command (i.e. python manage.py runserver 8080). You can stop running the server by entering ctrl + c into command prompt.
+
+With the site running you should see this when you go to the site:
+
+![Site Home](https://user-images.githubusercontent.com/15369629/219767815-de70a114-1839-42de-8b51-93a02c971e42.PNG)
+
+You can navigate the site by selecting the links at the top, You may already be logged in, in which case you will see your username and a logout button at the top instead of the login and register buttons.
+
+The site will be pretty empty at the start, if you want to add an article got to the admin page by navigating to http://127.0.0.1:8000/admin/ (if you changed the site to not run on the default port you will need to put whichever port you chose instead of 8000). If you are not logged in you will be prompted to here and you need to have a superuser account to access the page which you should have made during the install. Then it should take you to this page:
+
+![Admin](https://user-images.githubusercontent.com/15369629/219769379-e8f5a949-2ed4-4225-bca5-e76618e2a5df.PNG)
+
+Under the 'Blogs' section you can click to add a post which will bring you to this screen where you can create a post:
+
+![Post](https://user-images.githubusercontent.com/15369629/219772139-c21397e8-180e-48f1-9209-04f069c84289.PNG)
+
+After you fill in your post press Save and it will be added to your database and will be visible in the site under the "Articles" page which lists all posts added in chronological order:
+
+![ArticleList](https://user-images.githubusercontent.com/15369629/219781428-c3244d36-2375-45d1-8536-2cc441a49ea6.PNG)
+
+Once you select an article from the list it will take you to the full view for the post:
+
+![Article View](https://user-images.githubusercontent.com/15369629/219781639-dac5417f-f9af-4ed2-a495-ad4f87ef5bdf.PNG)
+
+This also includes comments at the bottom of the page, and if you are logged in there is the option to add your own comment:
+
+![comments](https://user-images.githubusercontent.com/15369629/219781905-fae09296-75bc-4577-b27a-38d845f0602d.PNG)
+
+
+## Credits
+Murray Bosworth
+https://www.hyperiondev.com/ for their course resources
