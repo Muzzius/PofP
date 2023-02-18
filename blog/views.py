@@ -15,7 +15,7 @@ class PostDetail(DetailView):
         data['comments'] = comments_connected
         if self.request.user.is_authenticated:
             data['comment_form'] = CommentForm(instance=self.request.user)
-            return data
+        return data
 
     def post(self, request, *args, **kwargs):
         new_comment = Comment(body=request.POST.get('body'),
