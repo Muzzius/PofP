@@ -33,9 +33,3 @@ B
 home/urls.py,f\9\f9782bad13aa4d6aa4b8882f98cae6053daa8556
 J
 blog/templates/header.html,7\9\792563ff3efdac178cbadb0aabe18e9a5f914c6e
-H
-blog/templates/post.html,3\2\3200c038d1ca6f7cd22508820bc5448d2215b0cd
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-=
-blog/views.py,e\7\e7a8c955252fc1494be19edcdaa6f927cd79a1a7
