@@ -65,6 +65,35 @@ This also includes comments at the bottom of the page, and if you are logged in 
 ![comments](https://user-images.githubusercontent.com/15369629/219781905-fae09296-75bc-4577-b27a-38d845f0602d.PNG)
 
 
+## Running in a container
+To run this projext in a container you will either need to install Docker Decktop (https://www.docker.com/) or creat an account on Docker and use Docker Playground (https://labs.play-with-docker.com/)
+
+### To run with Docker Desktop
+1. Using command line in the root directory for the project (where the Dockerfile is found) run 
+   'docker build -t [Enter a tag for the image] ./'
+2. Once this has finished you can now run
+   'docker run -d -p 80:80 [the tag you chose]'
+3. You should now be able to access the site by going to http://localhost in your browser
+4. To stop the app from running enter
+   'docker ps'
+   to find the ID of the container running the image and then enter
+   'docker stop [ID]'
+
+### To run in docker playground
+1. Follow step 1 from the Docker Desktop instructions to build the image.
+2. In command line enter 'docker login' and enter your login details for docker hub.
+3. On docker hub you will need to create a repository and then retag the local image to match your repository's name.
+   to do this in command line run
+   'docker tag [local tag for the image] [user]/[repo]'
+   where user is your Docker hub username and repo is the repositories name.
+4. Now upload the image by entering
+   'docker push [user]/[repo]'
+5. Now you can login to Docker playground with your Docker account and start a session and begin a new instance/
+6. In the instance enter
+   'docker run -d -p 80:80 [user]/[repo]'
+   Once this finishes executing the port number you enter should appear next to the 'open port' button near the top of the screen
+   If you click this it will take you to the app's web page.
+
 ## Credits
 - Murray Bosworth
 - https://www.hyperiondev.com/ for their course resources
