@@ -72,7 +72,7 @@ To run this projext in a container you will either need to install Docker Deckto
 1. Using command line in the root directory for the project (where the Dockerfile is found) run 
    'docker build -t [Enter a tag for the image] ./'
 2. Once this has finished you can now run
-   'docker run -d -p 80:80 [the tag you chose]'
+   'docker run -d -p 8000:8000 [the tag you chose]'
 3. You should now be able to access the site by going to http://localhost in your browser
 4. To stop the app from running enter
    'docker ps'
@@ -90,7 +90,7 @@ To run this projext in a container you will either need to install Docker Deckto
    'docker push [user]/[repo]'
 5. Now you can login to Docker playground with your Docker account and start a session and begin a new instance/
 6. In the instance enter
-   'docker run -d -p 80:80 [user]/[repo]'
+   'docker run -d -p 8000:8000 [user]/[repo]'
    Once this finishes executing the port number you enter should appear next to the 'open port' button near the top of the screen
    If you click this it will take you to the app's web page.
 
