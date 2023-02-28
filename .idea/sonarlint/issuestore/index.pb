@@ -31,5 +31,19 @@ B
 blog/urls.py,f\6\f6b33af54aee9a28118c42532a95bf2744e8df7d
 <
 home/urls.py,f\9\f9782bad13aa4d6aa4b8882f98cae6053daa8556
-J
-blog/templates/header.html,7\9\792563ff3efdac178cbadb0aabe18e9a5f914c6e
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+=
+blog/views.py,e\7\e7a8c955252fc1494be19edcdaa6f927cd79a1a7
+C
+mtgSite/settings.py,4\f\4fc8268f87408328cf1ae2f1822fdc9620b75658
+I
+home/templates/index.html,b\f\bfc38e9dc96cdb44d799c1a9c7be816dd3d157d3
+H
+blog/templates/blog.html,e\4\e4e7ce987b3a44a564aa21e8e686c17c613a7e12
+]
+-user_auth/templates/authentication/login.html,b\b\bb00ec6893c3a792a6f27f9228ab91cdd0c92bfc
+d
+4user_auth/templates/authentication/registration.html,4\0\40cf7eedc63a1497d71e2e26d20c68b6aeecc1fa
+H
+blog/templates/post.html,3\2\3200c038d1ca6f7cd22508820bc5448d2215b0cd
