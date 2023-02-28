@@ -93,6 +93,9 @@ To run this projext in a container you will either need to install Docker Deckto
    'docker run -d -p 8000:8000 [user]/[repo]'
    Once this finishes executing the port number you enter should appear next to the 'open port' button near the top of the screen
    If you click this it will take you to the app's web page.
+   
+## Documentation
+Documentation can be found in /docs/_build/html/index.html
 
 ## Credits
 - Murray Bosworth
